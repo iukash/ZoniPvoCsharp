@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\Cel.jpg" />
+    <None Remove="resources\PVO.jpg" />
+    <None Remove="resources\su57.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="26.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\Cel.jpg" />
+    <Resource Include="resources\PVO.jpg" />
+    <Resource Include="resources\su57.png" />
+  </ItemGroup>
+
+</Project>
